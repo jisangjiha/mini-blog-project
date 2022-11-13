@@ -6,11 +6,11 @@ function CommentList(props) {
   const { comments } = props;
 
   return (
-    <Wrapper>
+    <div className="Wrapper">
       {comments.map((comment, index) => {
         return <CommentListItem key={comment.id} comment={comment} />;
       })}
-    </Wrapper>
+    </div>
   );
 }
 

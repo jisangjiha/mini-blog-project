@@ -10,8 +10,8 @@ function PostWritePage(props) {
   const [content, setContent] = useState("");
 
   return (
-    <Wrapper>
-      <Container>
+    <div className="Wrapper">
+      <div className="Container">
         <TextInput
           height={20}
           value={title}
@@ -23,7 +23,7 @@ function PostWritePage(props) {
           height={480}
           value={content}
           onChange={(event) => {
-            setTitle(event.target.value);
+            setContent(event.target.value);
           }}
         />
         <Button
@@ -32,8 +32,8 @@ function PostWritePage(props) {
             navigate("/");
           }}
         />
-      </Container>
-    </Wrapper>
+      </div>
+    </div>
   );
 }
 

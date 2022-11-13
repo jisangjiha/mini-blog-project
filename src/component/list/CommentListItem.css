@@ -1,4 +1,4 @@
-Wrapper {
+.Wrapper {
   width: calc(100% - 32px);
   padding: 16px;
   display: flex;
@@ -14,6 +14,6 @@ Wrapper {
   */
 }
 
-ContentText {
+.ContentText {
   font-size: 16px;
 }

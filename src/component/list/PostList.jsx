@@ -6,7 +6,7 @@ function PostList(props) {
   const { posts, onclickItem } = props;
 
   return (
-    <Wrapper>
+    <div className="Wrapper">
       {posts.map((post, index) => {
         return (
           <PostListItem
@@ -18,7 +18,7 @@ function PostList(props) {
           />
         );
       })}
-    </Wrapper>
+    </div>
   );
 }
 

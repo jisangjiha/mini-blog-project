@@ -5,9 +5,9 @@ function CommentListItem(props) {
   const { comment } = props;
 
   return (
-    <Wrapper>
-      <ContentText>{comment.content}</ContentText>
-    </Wrapper>
+    <div className="Wrapper">
+      <p className="ContentText">{comment.content}</p>
+    </div>
   );
 }
 

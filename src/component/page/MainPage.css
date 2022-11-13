@@ -1,4 +1,4 @@
-Wrapper {
+.Wrapper {
   padding: 16px;
   width: calc(100% - 32px);
   display: flex;
@@ -7,7 +7,7 @@ Wrapper {
   justify-content: center;
 }
 
-Container {
+.Container {
   width: 100%;
   max-width: 720px;
 

@@ -9,8 +9,8 @@ function MainPage(props) {
   const {} = props;
   const navigate = useNavigate();
   return (
-    <Wrapper>
-      <Container>
+    <div className="Wrapper">
+      <div className="Container">
         <Button
           title="글 작성하기"
           onClick={() => {
@@ -23,8 +23,8 @@ function MainPage(props) {
             navigate(`/post/${item.id}`);
           }}
         />
-      </Container>
-    </Wrapper>
+      </div>
+    </div>
   );
 }
 

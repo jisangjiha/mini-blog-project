@@ -5,9 +5,9 @@ function PostListItem(props) {
   const { post, onClick } = props;
 
   return (
-    <Wrapper onClick={onClick}>
-      <TiltleText>{post.title}</TiltleText>
-    </Wrapper>
+    <div className="Wrapper" onClick={onClick}>
+      <p className="TiltleText">{post.title}</p>
+    </div>
   );
 }
 

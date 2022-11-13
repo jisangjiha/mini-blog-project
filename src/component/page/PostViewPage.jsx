@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import "./PostViewPage";
+import "./PostViewPage.css";
 import CommentList from "../list/CommentList";
 import TextInput from "../ui/TextInput";
 import Button from "../ui/Button";
 import data from "../../data.json";
-import PostWritePage from "./PostWritePage";
 
 function PostViewPage(props) {
   const navigate = useNavigate();
