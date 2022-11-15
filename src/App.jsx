@@ -1,14 +1,20 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
+import styled from "styled-components";
 import MainPage from "./component/page/MainPage";
 import PostWritePage from "./component/page/PostWritePage";
 import PostViewPage from "./component/page/PostViewPage";
 
+const MainTitleText = styled.p`
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+`;
+
 function App(props) {
   return (
     <BrowserRouter>
-      <p className="mainTitleText">jisang's mini blog</p>
+      <MainTitleText>jisang's mini blog</MainTitleText>
       <Routes>
         <Route index element={<MainPage />} />
         <Route path="post-write" element={<PostWritePage />} />
